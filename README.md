@@ -9,8 +9,14 @@ My simple TODO list app.
 - Go (1.22.1)
 - Gim
 
-## Starting development server
+## Starting database
 
 ```sh
-go run main.go
+docker compose up -d db
+```
+
+## Starting API
+
+```sh
+docker compose up backend
 ```
