@@ -34,3 +34,7 @@ func ConnectDatabase() {
 		fmt.Println("ORM successfully connected!")
 	}
 }
+
+func SetupDatabase() {
+	gormDB.AutoMigrate(&Todo{})
+}
